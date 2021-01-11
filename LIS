@@ -2,3 +2,12 @@
 Copy ไฟล์ฐานข้อมูล LIS_backup_YYYYMMDDhhmm.bak ที่ได้จากการ Backup ไว้แล้วที่ \\10.4.101.5\SI-Backup\Database\LIS\NetBakData\adisak@MTOPD\Disk D\LIS MSSQL BACKUP หรือ \\10.51.1.5\SI-Backup\Database\LIS\NetBakData\adisak@MTOPD\Disk D\LIS MSSQL BACKUP ไว้ที่ local drive ของเครื่องที่ต้องการ restore database
 Login เข้า Microsoft SQL Server Management Studio ของเครื่องที่ต้องการ restore database
 ถ้ายังมีฐานข้อมูลชื่อ LIS แล้วให้ข้ามไปทำข้อที่ 5 แต่ถ้ายังไม่มีฐานข้อมูลชื่อ LIS ให้ทำการสร้างฐานข้อมูลขึ้นมาก่อน โดยคลิกขวาที่ Databases > New Database… 
+พิมพ์ LIS ในช่อง Database Name: จากนั้นคลิกปุ่ม OK
+เลือก Databases ชื่อ LIS จากนั้นให้ผู้ใช้คลิกขวาเลือก Tasks > Restore > Database…
+คลิกเลือกที่ Form device: จากนั้นที่ปุ่ม …
+จะปรากฏหน้าต่าง Specify Backup ให้คลิกปุ่ม Add จากนั้นให้เลือกไฟล์ที่ copy มาตามข้อ 1 และคลิกปุ่ม OK
+ที่หน้าต่าง Specify Backup ให้คลิกปุ่ม OK
+คลิกที่ Check box เลือก Database ที่ต้องการ Restore อีกครั้ง
+จากนั้นในส่วนของ Select a page ให้คลิกปุ่มเลือก Options > Overwrite the existing database > OK
+จากนั้นให้รอ Progress แสดงผล 100%
+ระบบจะแสดงหน้าต่าง Microsoft SQL Server Management Studio ขึ้นมา เพื่อยืนยันการ Restore ข้อมูลเสร็จสิ้น จากนั้นให้คลิกปุ่ม OK
